@@ -23,14 +23,7 @@ pipeline {
                 archiveArtifacts artifacts: '**/*.jar',followSymlinks: false
             }
         }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-                sh 'java -jar target/simplehttpserver-1.0-SNAPSHOT-jar-with-dependencies.jar'
-               
-            }
-        }
-        stage('Slack Notifications') {
+                stage('Slack Notifications') {
             steps{
                 slackSend baseUrl: 'https://hooks.slack.com/services/',
                 channel: '#fursa-hw3',
@@ -40,6 +33,14 @@ pipeline {
                 tokenCredentialId: 'slack-hw'
             }
         }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+                sh 'java -jar target/simplehttpserver-1.0-SNAPSHOT-jar-with-dependencies.jar &'
+               
+            }
+        }
+
 
     }
 }
