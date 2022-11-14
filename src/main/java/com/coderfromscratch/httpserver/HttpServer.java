@@ -6,6 +6,7 @@ import com.coderfromscratch.httpserver.core.ServerListenerThread;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.management.ObjectInstance;
 import javax.xml.transform.*;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
@@ -88,7 +89,10 @@ public class HttpServer {
         fw2.write("{\"port\": 8080, \"webroot\": \"/tmp\"}");
         fw2.close();
 
-        ConfigurationManager.getInstance().loadConfigurationFile(temp2.toString());
+        ConfigurationManager a;
+        a=ConfigurationManager.getInstance();
+        System.out.println(a);
+        a.loadConfigurationFile(temp2.toString());
         Configuration conf = ConfigurationManager.getInstance().getCurrentConfiguration();
 
 //        LOGGER.info("Using Port: " + conf.getPort());
