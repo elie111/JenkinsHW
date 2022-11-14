@@ -3,16 +3,16 @@
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jenkins_logo.svg/1200px-Jenkins_logo.svg.png" alt="drawing" style="width:150px;"/>
 </p>
 
-### **Breaking News**
+### **Breaking News Ynet Web Application**
 #### **To run the project:**
 >1. clone the project :
-git clone https://github.com/elie111/breakingNews.git
+git clone https://github.com/elie111/JenkinsHW.git
 
 > 2. build the project:
-mvn clean install
+mvn clean install assembly:single
 
 > 3. run the jar file:
-java -jar target/fursaJenkins-1.0-SNAPSHOT.jar
+java -jar target/simplehttpserver-1.0-SNAPSHOT-jar-with-dependencies.jar
 
 
 ### **java application**
@@ -21,11 +21,11 @@ java -jar target/fursaJenkins-1.0-SNAPSHOT.jar
 <p align="center" >
   <img src="/Images/newshtml.png" alt="drawing" style="width:700px;"/>
 </p>
-
+we managed to run the html file on localhost:8080 with the help of an opensource http server program you can find the original repository [here](https://github.com/CoderFromScratch/simple-java-http-server)
 
 ### **Jenkins pipeline**
 
-* we created a jenkins pipeline to automate the building and deployment process, we used a worker node to run the pipeline script
+* we created a jenkins pipeline to automate the building and deployment process, we used a worker node to run the pipeline script and we connected the github account to jenkins and ran the script with "pipeline script from SCM"
 
 <p align="center" >
   <img src="/Images/workernode.png" alt="drawing" style="width:700px;"/>
@@ -35,10 +35,10 @@ java -jar target/fursaJenkins-1.0-SNAPSHOT.jar
   <img src="/Images/blueocean.png" alt="drawing" style="width:700px;"/>
 </p>
 
-  * **Clone Stage**: we cloned the project: git clone https://github.com/elie111/breakingNews.git
-  * **Build Stage**: we built the project using the command: mvn clean install
-  * **Artifact Stage**: we archived the jar file
-  * **Deployment Stage**:  we ran the jar file that was created from the building stage which printed the html file
+  * **Clone Stage**: we cloned the project: git branch: "main",url:'https://github.com/elie111/JenkinsHW.git'
+  * **Build Stage**: we built the project using the command: mvn clean install assembly:single 
+  * **Artifact Stage**: we archived the jar file: archiveArtifacts artifacts: '**/*.jar'
+  * **Deployment Stage**:  we ran the jar file that was created from the building stage which ran the server in the background: java -jar target/simplehttpserver-1.0-SNAPSHOT-jar-with-dependencies.jar &
   
 <p align="center" >
   <img src="/Images/output.png" alt="drawing" style="width:700px;"/>
