@@ -1,2 +1,51 @@
-# simple-java-http-server
-Create a Simple HTTP Server in Java Tutorial Series - https://www.youtube.com/playlist?list=PLAuGQNR28pW56GigraPdiI0oKwcs8gglW
+ <h1 align="center">Fursa HW3 Jenkins Closing Task</h3>
+<p align="center" >
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jenkins_logo.svg/1200px-Jenkins_logo.svg.png" alt="drawing" style="width:150px;"/>
+</p>
+
+### **Breaking News**
+#### **To run the project:**
+>1. clone the project :
+git clone https://github.com/elie111/breakingNews.git
+
+> 2. build the project:
+mvn clean install
+
+> 3. run the jar file:
+java -jar target/fursaJenkins-1.0-SNAPSHOT.jar
+
+
+### **java application**
+*   First thing, we read the xml page from the [URL](http://www.ynet.co.il/Integration/StoryRss2.xml) which had the breaking news from the website Ynet with the help of some java libraries like java.net.URL, then using the XSLT language we managed to translate the XML to an HTML file so we can read the news more easily, here is an example of the html page we got:
+
+<p align="center" >
+  <img src="/Images/newshtml.png" alt="drawing" style="width:700px;"/>
+</p>
+
+
+### **Jenkins pipeline**
+
+* we created a jenkins pipeline to automate the building and deployment process, we used a worker node to run the pipeline script
+
+<p align="center" >
+  <img src="/Images/workernode.png" alt="drawing" style="width:700px;"/>
+</p>
+
+<p align="center" >
+  <img src="/Images/blueocean.png" alt="drawing" style="width:700px;"/>
+</p>
+
+  * **Clone Stage**: we cloned the project: git clone https://github.com/elie111/breakingNews.git
+  * **Build Stage**: we built the project using the command: mvn clean install
+  * **Artifact Stage**: we archived the jar file
+  * **Deployment Stage**:  we ran the jar file that was created from the building stage which printed the html file
+  
+<p align="center" >
+  <img src="/Images/output.png" alt="drawing" style="width:700px;"/>
+</p>
+
+* **Slack Notification Stage**: and finally we added a new stage which sends a message on a slack channel we created to inform us that the project has been built and deployed
+
+<p align="center" >
+  <img src="/Images/slack.png" alt="drawing" style="width:700px;"/>
+</p>
