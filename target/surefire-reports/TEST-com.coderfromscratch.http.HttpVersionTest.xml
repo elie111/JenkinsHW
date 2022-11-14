@@ -6,7 +6,7 @@
     <property name="java.vm.version" value="17.0.2+8-86"/>
     <property name="sun.boot.library.path" value="C:\Users\win10\.jdks\openjdk-17.0.2\bin"/>
     <property name="user.country.format" value="IL"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\win10\OneDrive\Desktop\software engineering\simple-java-http-server"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\win10\OneDrive\Desktop\BreakingNewsHW"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -17,7 +17,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\win10\OneDrive\Desktop\software engineering\simple-java-http-server"/>
+    <property name="user.dir" value="C:\Users\win10\OneDrive\Desktop\BreakingNewsHW"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="java.runtime.version" value="17.0.2+8-86"/>
     <property name="os.arch" value="amd64"/>

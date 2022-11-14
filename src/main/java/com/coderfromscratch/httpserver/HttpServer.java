@@ -80,8 +80,15 @@ public class HttpServer {
 //
 //        Desktop.getDesktop().open(htmlFile);
         LOGGER.info("Server starting...");
+        Path temp2=Files.createTempFile("http", ".json");
+        Files.deleteIfExists(temp2);
 
-        ConfigurationManager.getInstance().loadConfigurationFile("src/main/resources/http.json");
+
+        FileWriter fw2 = new FileWriter(String.valueOf(temp2));
+        fw2.write("{\"port\": 8080, \"webroot\": \"/tmp\"}");
+        fw2.close();
+
+        ConfigurationManager.getInstance().loadConfigurationFile(temp2.toString());
         Configuration conf = ConfigurationManager.getInstance().getCurrentConfiguration();
 
         LOGGER.info("Using Port: " + conf.getPort());

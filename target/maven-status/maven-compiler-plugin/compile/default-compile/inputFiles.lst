@@ -1,15 +1,15 @@
-C:\Users\win10\OneDrive\Desktop\software engineering\simple-java-http-server\src\main\java\com\coderfromscratch\httpserver\HttpServer.java
-C:\Users\win10\OneDrive\Desktop\software engineering\simple-java-http-server\src\main\java\com\coderfromscratch\http\HttpMethod.java
-C:\Users\win10\OneDrive\Desktop\software engineering\simple-java-http-server\src\main\java\com\coderfromscratch\httpserver\config\ConfigurationManager.java
-C:\Users\win10\OneDrive\Desktop\software engineering\simple-java-http-server\src\main\java\com\coderfromscratch\http\HttpStatusCode.java
-C:\Users\win10\OneDrive\Desktop\software engineering\simple-java-http-server\src\main\java\com\coderfromscratch\httpserver\core\ServerListenerThread.java
-C:\Users\win10\OneDrive\Desktop\software engineering\simple-java-http-server\src\main\java\com\coderfromscratch\http\HttpParsingException.java
-C:\Users\win10\OneDrive\Desktop\software engineering\simple-java-http-server\src\main\java\com\coderfromscratch\httpserver\config\Configuration.java
-C:\Users\win10\OneDrive\Desktop\software engineering\simple-java-http-server\src\main\java\com\coderfromscratch\http\HttpMessage.java
-C:\Users\win10\OneDrive\Desktop\software engineering\simple-java-http-server\src\main\java\com\coderfromscratch\http\HttpParser.java
-C:\Users\win10\OneDrive\Desktop\software engineering\simple-java-http-server\src\main\java\com\coderfromscratch\httpserver\config\HttpConfigurationException.java
-C:\Users\win10\OneDrive\Desktop\software engineering\simple-java-http-server\src\main\java\com\coderfromscratch\httpserver\core\HttpConnectionWorkerThread.java
-C:\Users\win10\OneDrive\Desktop\software engineering\simple-java-http-server\src\main\java\com\coderfromscratch\http\BadHttpVersionException.java
-C:\Users\win10\OneDrive\Desktop\software engineering\simple-java-http-server\src\main\java\com\coderfromscratch\http\HttpRequest.java
-C:\Users\win10\OneDrive\Desktop\software engineering\simple-java-http-server\src\main\java\com\coderfromscratch\http\HttpVersion.java
-C:\Users\win10\OneDrive\Desktop\software engineering\simple-java-http-server\src\main\java\com\coderfromscratch\httpserver\util\Json.java
+C:\Users\win10\OneDrive\Desktop\BreakingNewsHW\src\main\java\com\coderfromscratch\httpserver\config\Configuration.java
+C:\Users\win10\OneDrive\Desktop\BreakingNewsHW\src\main\java\com\coderfromscratch\http\BadHttpVersionException.java
+C:\Users\win10\OneDrive\Desktop\BreakingNewsHW\src\main\java\com\coderfromscratch\http\HttpParsingException.java
+C:\Users\win10\OneDrive\Desktop\BreakingNewsHW\src\main\java\com\coderfromscratch\http\HttpVersion.java
+C:\Users\win10\OneDrive\Desktop\BreakingNewsHW\src\main\java\com\coderfromscratch\http\HttpMethod.java
+C:\Users\win10\OneDrive\Desktop\BreakingNewsHW\src\main\java\com\coderfromscratch\http\HttpStatusCode.java
+C:\Users\win10\OneDrive\Desktop\BreakingNewsHW\src\main\java\com\coderfromscratch\httpserver\core\HttpConnectionWorkerThread.java
+C:\Users\win10\OneDrive\Desktop\BreakingNewsHW\src\main\java\com\coderfromscratch\http\HttpRequest.java
+C:\Users\win10\OneDrive\Desktop\BreakingNewsHW\src\main\java\com\coderfromscratch\http\HttpMessage.java
+C:\Users\win10\OneDrive\Desktop\BreakingNewsHW\src\main\java\com\coderfromscratch\httpserver\config\ConfigurationManager.java
+C:\Users\win10\OneDrive\Desktop\BreakingNewsHW\src\main\java\com\coderfromscratch\httpserver\config\HttpConfigurationException.java
+C:\Users\win10\OneDrive\Desktop\BreakingNewsHW\src\main\java\com\coderfromscratch\httpserver\HttpServer.java
+C:\Users\win10\OneDrive\Desktop\BreakingNewsHW\src\main\java\com\coderfromscratch\http\HttpParser.java
+C:\Users\win10\OneDrive\Desktop\BreakingNewsHW\src\main\java\com\coderfromscratch\httpserver\core\ServerListenerThread.java
+C:\Users\win10\OneDrive\Desktop\BreakingNewsHW\src\main\java\com\coderfromscratch\httpserver\util\Json.java
