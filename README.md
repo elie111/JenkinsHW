@@ -18,13 +18,13 @@ java -jar target/simplehttpserver-1.0-SNAPSHOT-jar-with-dependencies.jar
 
 
 ### **java application**
-*   First thing, with the help of some java libraries like java.net.URL we read the xml page from the [URL](http://www.ynet.co.il/Integration/StoryRss2.xml) which had the breaking news from the website Ynet , then using the XSLT language we managed to translate the XML to an HTML file so we can read the news more easily, here is an example of the html page we got:
+*   First thing, with the help of some java libraries like java.net.URL we read the xml page from this [URL](http://www.ynet.co.il/Integration/StoryRss2.xml) which had the breaking news from Ynet, then using the XSLT language we managed to translate the XML to an HTML file so we can read the news more easily, here is an example of the html page we got:
 
 <p align="center" >
   <img src="/Images/newshtml.png" alt="drawing" style="width:700px;"/>
 </p>
 
-As you can see, we managed to run the html file on localhost:8080, we used an open-source http server program you can find the original repository [here](https://github.com/CoderFromScratch/simple-java-http-server) 
+As you can see, we managed to run the html file on localhost:8080, we used an open-source http server code, you can find the original repository [here](https://github.com/CoderFromScratch/simple-java-http-server) 
 
 
 ### **Jenkins pipeline**
