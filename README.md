@@ -29,7 +29,7 @@ As you can see, we managed to run the html file on localhost:8080, for that we u
 
 ### **Jenkins pipeline**
 
-* we created a jenkins declerative pipeline to automate the building and deployment process, we used a worker node to run the pipeline script.
+* we created a jenkins declerative pipeline to automate the building and deployment process, we used a worker node to run the [script](https://github.com/elie111/JenkinsHW/blob/main/Jenkinsfile).
   and we connected the github account to jenkins, and added a Jenkinsfile to our repository and ran the script with the "pipeline script from SCM" option.
 
 <p align="center" >
