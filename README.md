@@ -24,7 +24,7 @@ java -jar target/simplehttpserver-1.0-SNAPSHOT-jar-with-dependencies.jar
   <img src="/Images/newshtml.png" alt="drawing" style="width:700px;"/>
 </p>
 
-As you can see, we managed to run the html file on localhost:8080, we used an open-source http server code, you can find the original repository [here](https://github.com/CoderFromScratch/simple-java-http-server) 
+As you can see, we managed to run the html file on localhost:8080, for that we used an open-source http server code, you can find the original repository [here](https://github.com/CoderFromScratch/simple-java-http-server).
 
 
 ### **Jenkins pipeline**
