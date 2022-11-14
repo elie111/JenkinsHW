@@ -40,11 +40,17 @@ As you can see, we managed to run the html file on localhost:8080, for that we u
   <img src="/Images/blueocean.png" alt="drawing" style="width:700px;"/>
 </p>
 
-  * **Clone Stage**: we cloned the project: git branch: "main",url:'https://github.com/elie111/JenkinsHW.git'
-  * **Build Stage**: we built the project using the command: mvn clean install assembly:single 
-  * **Artifact Stage**: we archived the jar file: archiveArtifacts artifacts: '**/*.jar'
-  * **Deployment Stage**:  we ran the jar file that was created from the building stage, which ran the server in the background: java -jar target/simplehttpserver-1.0-SNAPSHOT-jar-with-dependencies.jar & 
-  * **Slack Notification Stage**: And finally we sent a message on a slack channel we created to inform us that the project has been built and deployed
+  #### **Clone Stage**:
+  > we cloned the project: git branch: "main",url:'https://github.com/elie111/JenkinsHW.git'
+  #### **Build Stage**:
+  > we built the project using the command: mvn clean install assembly:single 
+  #### **Artifact Stage**:
+  > we archived the jar file: archiveArtifacts artifacts: '**/*.jar'
+  #### **Deployment Stage**:
+  >  we ran the jar file that was created from the building stage, which ran the server in the background: 
+  > java -jar target/simplehttpserver-1.0-SNAPSHOT-jar-with-dependencies.jar & 
+  #### **Slack Notification Stage**: 
+  > And finally we sent a message on a slack channel we created to inform us that the project has been built and deployed
 
 <p align="center" >
   <img src="/Images/slack.png" alt="drawing" style="width:700px;"/>
