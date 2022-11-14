@@ -31,7 +31,7 @@ public class HttpServer {
         }
     }
 
-    private final static Logger LOGGER = LoggerFactory.getLogger(HttpServer.class);
+//    private final static Logger LOGGER = LoggerFactory.getLogger(HttpServer.class);
 
     public HttpServer() throws IOException {
     }
@@ -79,7 +79,7 @@ public class HttpServer {
 //
 //
 //        Desktop.getDesktop().open(htmlFile);
-        LOGGER.info("Server starting...");
+//        LOGGER.info("Server starting...");
         Path temp2=Files.createTempFile("http", ".json");
         Files.deleteIfExists(temp2);
 
@@ -91,8 +91,8 @@ public class HttpServer {
         ConfigurationManager.getInstance().loadConfigurationFile(temp2.toString());
         Configuration conf = ConfigurationManager.getInstance().getCurrentConfiguration();
 
-        LOGGER.info("Using Port: " + conf.getPort());
-        LOGGER.info("Using WebRoot: " + conf.getWebroot());
+//        LOGGER.info("Using Port: " + conf.getPort());
+//        LOGGER.info("Using WebRoot: " + conf.getWebroot());
 
         try {
             ServerListenerThread serverListenerThread = new ServerListenerThread(conf.getPort(), conf.getWebroot());
