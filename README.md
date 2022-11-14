@@ -1,4 +1,6 @@
  <h1 align="center">Fursa HW3 Jenkins Closing Task</h3>
+  <h1 align="center">Elie Haddad</h3>
+  
 <p align="center" >
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jenkins_logo.svg/1200px-Jenkins_logo.svg.png" alt="drawing" style="width:150px;"/>
 </p>
