@@ -95,7 +95,6 @@ public class HttpServer {
         a.loadConfigurationFile(temp2.toString());
         Configuration conf = ConfigurationManager.getInstance().getCurrentConfiguration();
 System.out.println("Using Port: " + conf.getPort());
-conf.setWebroot("localhost");
         System.out.println("Using WebRoot: " + conf.getWebroot());
 //        LOGGER.info("Using Port: " + conf.getPort());
 //        LOGGER.info("Using WebRoot: " + conf.getWebroot());
